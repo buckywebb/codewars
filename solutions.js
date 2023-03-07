@@ -4,3 +4,12 @@ function getRealFloor(n) {
     else if (n<=12) return n - 1
     else return n - 2
   }
+
+//===========================
+function findMultiples(integer, limit) {
+  let arr = []
+  for (let i = 1; integer * i <= limit; i++){
+    arr.push(integer * i)
+  }
+  return arr;
+}
