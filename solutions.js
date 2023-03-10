@@ -34,3 +34,16 @@ function peopleWithAgeDrink(old) {
 const plural = n => n !== 1;
 
 //===========================
+
+function well(x){
+  const goods = x.reduce((count, element) => (element === 'good' ? count + 1 : count), 0)
+  if (goods > 2){
+    return 'I smell a series!'
+  }else if (goods === 0){
+    return 'Fail!'
+  }else{
+    return 'Publish!'
+  }
+}
+
+//===========================
