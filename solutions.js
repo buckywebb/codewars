@@ -28,3 +28,9 @@ function peopleWithAgeDrink(old) {
     return 'drink whisky'
   }
 };
+
+//===========================
+
+const plural = n => n !== 1;
+
+//===========================
