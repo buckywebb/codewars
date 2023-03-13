@@ -47,3 +47,5 @@ function well(x){
 }
 
 //===========================
+
+const nameShuffler = str => str.split(' ').reverse().join(' ')
