@@ -51,4 +51,9 @@ function well(x){
 const nameShuffler = str => str.split(' ').reverse().join(' ')
 
 //===========================
+
 const xor = (a, b) => a !== b;
+
+//===========================
+
+const saleHotdogs = n => n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90
