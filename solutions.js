@@ -57,3 +57,23 @@ const xor = (a, b) => a !== b;
 //===========================
 
 const saleHotdogs = n => n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90
+
+//===========================
+
+function addFive(num) {
+  var total = num + 5
+  return total
+}
+
+//===========================
+
+function mergeArrays(arr1, arr2) {
+  //merge the two arrays
+  let merged = arr1.concat(arr2)
+
+  //sort them in ascending order
+  merged.sort((a, b) => a -b)
+  
+  //filter out duplicates and return the array
+  return merged.filter((item, index, inputArray) => inputArray.indexOf(item) === index)
+}
