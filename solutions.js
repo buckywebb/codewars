@@ -77,3 +77,24 @@ function mergeArrays(arr1, arr2) {
   //filter out duplicates and return the array
   return merged.filter((item, index, inputArray) => inputArray.indexOf(item) === index)
 }
+
+//=============================
+
+//My Answer
+function warnTheSheep(queue) {
+  let first = queue.length - 1
+  let wolf = queue.indexOf('wolf')
+  let warn = first - wolf
+  if(wolf === first){
+    return 'Pls go away and stop eating my sheep'
+  }else{
+    return `Oi! Sheep number ${warn}! You are about to be eaten by a wolf!`
+  }
+}
+
+
+//Best practice
+function warnTheSheep(queue) {
+  const position = queue.reverse().indexOf('wolf');
+  return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`;
+}
