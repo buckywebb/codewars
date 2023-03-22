@@ -112,3 +112,25 @@ const mouthSize = animal => animal.toLowerCase() === 'alligator' ? 'small' : 'wi
 const _if = (bool, func1, func2) => bool ? func1() : func2()
 
 //=================================
+//My Way
+function hello(name = 'World') {
+  if(name == ''){
+    name = 'World'
+  }
+  return "Hello, " + name[0].toUpperCase() + name.slice(1).toLowerCase() + "!"
+}
+
+// OR (best way on codewars)
+
+const hello = s =>
+  `Hello, ${s ? (s[0].toUpperCase() + s.slice(1).toLowerCase()) : 'World'}!`;
+
+// OR (second best on codewars, close to my way)
+
+function hello(name){
+  if (name){
+    return "Hello, " + name.substring(0,1).toUpperCase() + name.substring(1).toLowerCase() + '!';
+  } else {
+    return "Hello, World!";
+  }
+}
