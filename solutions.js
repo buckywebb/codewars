@@ -147,3 +147,6 @@ function pipeFix(numbers){
   return arr
 }
 
+//==================================
+
+const unusualFive = () => 'bucky'.length
