@@ -150,3 +150,12 @@ function pipeFix(numbers){
 //==================================
 
 const unusualFive = () => 'bucky'.length
+
+//==================================
+
+function dutyFree(normPrice, discount, hol){
+  let savings = normPrice * (discount/100)
+  return Math.floor(hol/savings)  
+}
+
+// const dutyFree = (normPrice, discount, hol) => Math.floor(hol/(normPrice * (discount/100)))
