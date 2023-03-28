@@ -169,3 +169,19 @@ function chromosomeCheck(sperm) {
     return "Congratulations! You're going to have a daughter."
   }
 }
+
+//=========================================
+
+// Define a function that removes duplicates from an array of numbers and returns it as a result.
+//The order of the sequence has to stay the same.
+
+function distinct(a) {
+  let noDuplicates = a.filter((n, index) => {
+    return a.indexOf(n) === index
+  })
+  return noDuplicates
+ }
+ 
+ // if index and indexOf() are NOT EQUAL, it is a duplicate
+
+ //=========================================
