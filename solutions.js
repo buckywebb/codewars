@@ -159,3 +159,13 @@ function dutyFree(normPrice, discount, hol){
 }
 
 // const dutyFree = (normPrice, discount, hol) => Math.floor(hol/(normPrice * (discount/100)))
+
+//=========================================
+
+function chromosomeCheck(sperm) {
+  if(sperm === "XY"){
+    return "Congratulations! You're going to have a son."
+  }else{
+    return "Congratulations! You're going to have a daughter."
+  }
+}
