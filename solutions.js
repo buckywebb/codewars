@@ -185,3 +185,9 @@ function distinct(a) {
  // if index and indexOf() are NOT EQUAL, it is a duplicate
 
  //=========================================
+
+ class Ball {
+  constructor(ballType = "regular") {
+    this.ballType = ballType;
+  }
+}
