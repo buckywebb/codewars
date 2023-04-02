@@ -209,3 +209,7 @@ function problem(x){
     return (x * 50) + 6
   }
 }
+
+//============================================
+
+const take = (arr, n) => arr.slice(0, n)
