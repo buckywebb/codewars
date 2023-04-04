@@ -213,3 +213,17 @@ function problem(x){
 //============================================
 
 const take = (arr, n) => arr.slice(0, n)
+
+//============================================
+
+// function remove (string) {
+//   if (string[string.length - 1] === "!"){
+//     return string.slice(0, -1)
+//   }else{
+//     return string
+//   }
+// }
+
+const remove = string => string[string.length - 1] === "!" ? string.slice(0, -1) : string
+
+//=============================================
