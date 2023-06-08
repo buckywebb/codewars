@@ -1,0 +1,21 @@
+// Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.
+
+
+function replace(s){
+    let str = ''
+    let vowels = 'aeiouAEIOU'
+    for(i = 0; i < s.length; i++){
+      if(vowels.includes(s[i])){
+        str += '!'
+      }else {
+        str += s[i]
+      }
+    }
+    return str
+   }
+
+
+// loop through string to compare each letter to vowels
+// if vowel, add ! to new string
+// if not vowel, add the letter to new string
+// return the new string
