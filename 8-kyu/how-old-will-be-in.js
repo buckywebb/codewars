@@ -12,3 +12,26 @@ Good Luck!
 
 
 /* My Answer */
+function  calculateAge(birthYear, otherYear) {
+  let age = birthYear - otherYear
+  switch(true){
+      case (age < -1):
+        return `You are ${Math.abs(age)} years old.`
+      case(age == -1):
+        return `You are ${Math.abs(age)} year old.`
+      case (age == 0):
+        return `You were born this very year!`
+      case (age == 1):
+        return `You will be born in ${age} year.`
+      case(age > 1):
+        return `You will be born in ${age} years.`
+  }
+}
+
+/* Top Answer */
+function  calculateAge(m, n) {
+	if(m == n) return 'You were born this very year!';
+  var year = Math.abs(m-n) == 1 ? 'year' : 'years';
+  if(m < n) return "You are "+(n-m)+' '+year+' old.';
+  if(m > n) return "You will be born in "+(-n+m)+' '+year+'.';
+}
