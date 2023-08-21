@@ -22,3 +22,24 @@ If you make it, return "Alive!", if not, return "Shark Bait!". */
 
 
 /* My Answer */
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+    let myTime = pontoonDistance/youSpeed
+    let sharkTime = sharkDistance/sharkSpeed
+    if(dolphin){
+      sharkTime = sharkDistance/(sharkSpeed/2)
+      }
+    if(myTime < sharkTime){
+      return "Alive!"
+    }else{
+      return "Shark Bait!"
+    }
+  }
+
+  
+  /* Top Answer */
+  function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+    if(dolphin){
+      sharkSpeed /= 2;
+    }
+    return pontoonDistance/youSpeed < sharkDistance/sharkSpeed ? "Alive!" : "Shark Bait!";
+  }
