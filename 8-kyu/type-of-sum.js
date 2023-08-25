@@ -4,3 +4,4 @@
 const typeOfSum = (a,b) => typeof (a + b)
 
 /* Top Answer */
+// Same as My Answer
